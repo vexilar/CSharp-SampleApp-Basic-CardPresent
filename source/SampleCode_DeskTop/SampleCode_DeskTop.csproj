@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{37B0E6C5-6E0D-4D1E-A1E6-51466EBF59B6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SampleCode</RootNamespace>
+    <AssemblyName>SampleCode</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataGenerator.cs" />
+    <Compile Include="FaultHandler.cs" />
+    <Compile Include="HelperMethods.cs">
+    </Compile>
+    <Compile Include="ManageApplicationData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageApplicationData.Designer.cs">
+      <DependentUpon>ManageApplicationData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageMerchantProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageMerchantProfile.Designer.cs">
+      <DependentUpon>ManageMerchantProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SampleCode_DeskTop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleCode_DeskTop.Designer.cs">
+      <DependentUpon>SampleCode_DeskTop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ManageApplicationData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ManageApplicationData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageMerchantProfile.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ManageMerchantProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleCode_DeskTop.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SampleCode_DeskTop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionManagementServices.resx">
+      <DependentUpon>TransactionManagementServices.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CWSServiceInformation\CWSServiceInformation.wsdl" />
+    <None Include="Service References\CWSServiceInformation\schemas7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CWSServiceInformation\schemas71.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CWSServiceInformation\schemas72.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CWSServiceInformation\schemas73.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CWSServiceInformation\schemas74.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CWSServiceInformation\schemas75.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CWSServiceInformation\schemas76.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CWSTransactionManagement\CwsDataServicesBilling1.wsdl" />
+    <None Include="Service References\CWSTransactionManagement\CwsTransactionManagement.wsdl" />
+    <None Include="Service References\CWSTransactionManagement\CWSTransactionManagement1.wsdl" />
+    <None Include="Service References\CWSTransactionManagement\schemas16.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CWSTransactionManagement\schemas161.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CWSTransactionManagement\schemas1610.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CWSTransactionManagement\schemas1611.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CWSTransactionManagement\schemas1612.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CWSTransactionManagement\schemas1613.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CWSTransactionManagement\schemas1614.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CWSTransactionManagement\schemas1615.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CWSTransactionManagement\schemas162.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CWSTransactionManagement\schemas163.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CWSTransactionManagement\schemas164.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CWSTransactionManagement\schemas165.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CWSTransactionManagement\schemas166.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CWSTransactionManagement\schemas167.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CWSTransactionManagement\schemas168.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CWSTransactionManagement\schemas169.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CwsTransactionProcessing\CwsTransactionProcessing.wsdl" />
+    <None Include="Service References\CwsTransactionProcessing\schemas12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CwsTransactionProcessing\schemas121.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CwsTransactionProcessing\schemas1210.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CwsTransactionProcessing\schemas1211.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CwsTransactionProcessing\schemas122.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CwsTransactionProcessing\schemas123.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CwsTransactionProcessing\schemas124.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CwsTransactionProcessing\schemas125.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CwsTransactionProcessing\schemas126.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CwsTransactionProcessing\schemas127.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CwsTransactionProcessing\schemas128.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CwsTransactionProcessing\schemas129.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WSDL%27s\CwsDataServices.wsdl" />
+    <None Include="WSDL%27s\CwsDataServicesBilling.wsdl" />
+    <None Include="WSDL%27s\CwsServiceInformation.wsdl" />
+    <None Include="WSDL%27s\CwsTransactionManagement.wsdl" />
+    <None Include="WSDL%27s\CwsTransactionProcessing.wsdl" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Service References\CWSServiceInformation\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CWSTransactionManagement\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CwsTransactionProcessing\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionManagementServices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransactionManagementServices.Designer.cs">
+      <DependentUpon>TransactionManagementServices.cs</DependentUpon>
+    </Compile>
+    <None Include="WSDL%27s\schemas.evosnap.com_CWS_v2.0_DataServices.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WSDL%27s\schemas.evosnap.com_CWS_v2.0_DataServices_Billing.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WSDL%27s\schemas.evosnap.com_CWS_v2.0_DataServices_TMS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WSDL%27s\schemas.evosnap.com_CWS_v2.0_DataServices_TMS_Fault.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WSDL%27s\schemas.evosnap.com_CWS_v2.0_DataServices_TMS_Faults.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WSDL%27s\schemas.evosnap.com_CWS_v2.0_ServiceInformation.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WSDL%27s\schemas.evosnap.com_CWS_v2.0_ServiceInformation_Faults.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WSDL%27s\schemas.evosnap.com_CWS_v2.0_TransactionProcessing.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WSDL%27s\schemas.evosnap.com_CWS_v2.0_Transactions.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WSDL%27s\schemas.evosnap.com_CWS_v2.0_Transactions_Bankcard.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WSDL%27s\schemas.evosnap.com_CWS_v2.0_Transactions_Bankcard_Pro.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WSDL%27s\schemas.evosnap.com_CWS_v2.0_Transactions_ElectronicChecking.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WSDL%27s\schemas.evosnap.com_CWS_v2.0_Transactions_Faults.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WSDL%27s\schemas.evosnap.com_CWS_v2.0_Transactions_StoredValue.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WSDL%27s\schemas.evosnap.com_Identity_1.0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WSDL%27s\schemas.evosnap.com_Ipc.General.WCF.Contracts.Common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WSDL%27s\schemas.evosnap.com_Ipc.General.WCF.Contracts.Common_External.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WSDL%27s\schemas.microsoft.com_2003_10_Serialization.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WSDL%27s\schemas.microsoft.com_2003_10_Serialization_Arrays.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CWSServiceInformation\SampleCode.CWSServiceInformation.ApplicationData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CWSServiceInformation\SampleCode.CWSServiceInformation.MerchantProfile.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CWSServiceInformation\SampleCode.CWSServiceInformation.PingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CWSServiceInformation\SampleCode.CWSServiceInformation.ServiceInformation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CWSTransactionManagement\SampleCode.CWSTransactionManagement.BatchDetailData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CWSTransactionManagement\SampleCode.CWSTransactionManagement.BillingEventDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CWSTransactionManagement\SampleCode.CWSTransactionManagement.BillingEventSummary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CWSTransactionManagement\SampleCode.CWSTransactionManagement.FamilyDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CWSTransactionManagement\SampleCode.CWSTransactionManagement.PingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CWSTransactionManagement\SampleCode.CWSTransactionManagement.QueryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CWSTransactionManagement\SampleCode.CWSTransactionManagement.SummaryDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CWSTransactionManagement\SampleCode.CWSTransactionManagement.TransactionDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CwsTransactionProcessing\SampleCode.CwsTransactionProcessing.PingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CwsTransactionProcessing\SampleCode.CwsTransactionProcessing.Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\workflow_overview_SIS.png" />
+    <Content Include="Images\workflow_overview_TPS.png" />
+    <None Include="Service References\CWSTransactionManagement\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\CWSTransactionManagement\configuration.svcinfo" />
+    <None Include="Service References\CWSTransactionManagement\configuration91.svcinfo" />
+    <None Include="Service References\CwsTransactionProcessing\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\CwsTransactionProcessing\configuration.svcinfo" />
+    <None Include="Service References\CwsTransactionProcessing\configuration91.svcinfo" />
+    <None Include="Service References\CWSServiceInformation\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\CWSServiceInformation\configuration.svcinfo" />
+    <None Include="Service References\CWSServiceInformation\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CWSServiceInformation\" />
+    <WCFMetadataStorage Include="Service References\CWSTransactionManagement\" />
+    <WCFMetadataStorage Include="Service References\CwsTransactionProcessing\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

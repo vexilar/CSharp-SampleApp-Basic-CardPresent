@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d1544038-5661-45f0-9c4b-eec45801340d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="C:\OwnCloud\EVO\CustomerCare\SalesEngineering\CustomerProjects\Triangle Payments\EVO-Snap-SampleApplication-CSharp-GUI\source\SampleCode_DeskTop\WSDL's\CwsTransactionProcessing.wsdl" Protocol="file" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="schemas12.xsd" MetadataType="Schema" ID="36b37c53-9b3c-4806-9885-c5ef9b18084b" SourceId="1" SourceUrl="file:///C:/OwnCloud/EVO/CustomerCare/SalesEngineering/CustomerProjects/Triangle Payments/EVO-Snap-SampleApplication-CSharp-GUI/source/SampleCode_DeskTop/WSDL's/schemas.evosnap.com_CWS_v2.0_Transactions_Bankcard.xsd" />
+    <MetadataFile FileName="schemas121.xsd" MetadataType="Schema" ID="9c4c5c9d-61ea-43b2-aa66-4d959f16f66b" SourceId="1" SourceUrl="file:///C:/OwnCloud/EVO/CustomerCare/SalesEngineering/CustomerProjects/Triangle Payments/EVO-Snap-SampleApplication-CSharp-GUI/source/SampleCode_DeskTop/WSDL's/schemas.microsoft.com_2003_10_Serialization_Arrays.xsd" />
+    <MetadataFile FileName="schemas122.xsd" MetadataType="Schema" ID="a8d68fda-9177-4d7f-b42e-32bfcf0ca1af" SourceId="1" SourceUrl="file:///C:/OwnCloud/EVO/CustomerCare/SalesEngineering/CustomerProjects/Triangle Payments/EVO-Snap-SampleApplication-CSharp-GUI/source/SampleCode_DeskTop/WSDL's/schemas.evosnap.com_Ipc.General.WCF.Contracts.Common_External.xsd" />
+    <MetadataFile FileName="schemas123.xsd" MetadataType="Schema" ID="2f2fdf87-01a2-492c-acff-25fe4ab3aff7" SourceId="1" SourceUrl="file:///C:/OwnCloud/EVO/CustomerCare/SalesEngineering/CustomerProjects/Triangle Payments/EVO-Snap-SampleApplication-CSharp-GUI/source/SampleCode_DeskTop/WSDL's/schemas.evosnap.com_CWS_v2.0_TransactionProcessing.xsd" />
+    <MetadataFile FileName="schemas124.xsd" MetadataType="Schema" ID="89c05de0-782e-4c11-854f-2a4c5f07b8b1" SourceId="1" SourceUrl="file:///C:/OwnCloud/EVO/CustomerCare/SalesEngineering/CustomerProjects/Triangle Payments/EVO-Snap-SampleApplication-CSharp-GUI/source/SampleCode_DeskTop/WSDL's/schemas.evosnap.com_CWS_v2.0_Transactions_StoredValue.xsd" />
+    <MetadataFile FileName="schemas125.xsd" MetadataType="Schema" ID="192077c2-0faf-4413-9e22-2e14e38fa1fe" SourceId="1" SourceUrl="file:///C:/OwnCloud/EVO/CustomerCare/SalesEngineering/CustomerProjects/Triangle Payments/EVO-Snap-SampleApplication-CSharp-GUI/source/SampleCode_DeskTop/WSDL's/schemas.microsoft.com_2003_10_Serialization.xsd" />
+    <MetadataFile FileName="schemas126.xsd" MetadataType="Schema" ID="f47b588a-a087-4614-aedb-0d8d3fe2fa0d" SourceId="1" SourceUrl="file:///C:/OwnCloud/EVO/CustomerCare/SalesEngineering/CustomerProjects/Triangle Payments/EVO-Snap-SampleApplication-CSharp-GUI/source/SampleCode_DeskTop/WSDL's/schemas.evosnap.com_CWS_v2.0_Transactions_Faults.xsd" />
+    <MetadataFile FileName="schemas127.xsd" MetadataType="Schema" ID="162b9f64-5ce8-4623-9deb-18db7326a372" SourceId="1" SourceUrl="file:///C:/OwnCloud/EVO/CustomerCare/SalesEngineering/CustomerProjects/Triangle Payments/EVO-Snap-SampleApplication-CSharp-GUI/source/SampleCode_DeskTop/WSDL's/schemas.evosnap.com_Ipc.General.WCF.Contracts.Common.xsd" />
+    <MetadataFile FileName="schemas128.xsd" MetadataType="Schema" ID="eabc8acf-dc1c-4a25-817f-12a4b182117e" SourceId="1" SourceUrl="file:///C:/OwnCloud/EVO/CustomerCare/SalesEngineering/CustomerProjects/Triangle Payments/EVO-Snap-SampleApplication-CSharp-GUI/source/SampleCode_DeskTop/WSDL's/schemas.evosnap.com_Identity_1.0.xsd" />
+    <MetadataFile FileName="schemas129.xsd" MetadataType="Schema" ID="f21fe37d-564c-4211-a670-eaec897eb6a0" SourceId="1" SourceUrl="file:///C:/OwnCloud/EVO/CustomerCare/SalesEngineering/CustomerProjects/Triangle Payments/EVO-Snap-SampleApplication-CSharp-GUI/source/SampleCode_DeskTop/WSDL's/schemas.evosnap.com_CWS_v2.0_Transactions_Bankcard_Pro.xsd" />
+    <MetadataFile FileName="CwsTransactionProcessing.wsdl" MetadataType="Wsdl" ID="caac2789-2d41-4f18-bed8-8f3b1bfcb9f7" SourceId="1" SourceUrl="file:///C:/OwnCloud/EVO/CustomerCare/SalesEngineering/CustomerProjects/Triangle Payments/EVO-Snap-SampleApplication-CSharp-GUI/source/SampleCode_DeskTop/WSDL's/CwsTransactionProcessing.wsdl" />
+    <MetadataFile FileName="schemas1210.xsd" MetadataType="Schema" ID="c9a3c925-6307-4d4d-a238-d8385afd3496" SourceId="1" SourceUrl="file:///C:/OwnCloud/EVO/CustomerCare/SalesEngineering/CustomerProjects/Triangle Payments/EVO-Snap-SampleApplication-CSharp-GUI/source/SampleCode_DeskTop/WSDL's/schemas.evosnap.com_CWS_v2.0_Transactions.xsd" />
+    <MetadataFile FileName="schemas1211.xsd" MetadataType="Schema" ID="ba252868-ea04-40c9-98a1-dd38958ea21e" SourceId="1" SourceUrl="file:///C:/OwnCloud/EVO/CustomerCare/SalesEngineering/CustomerProjects/Triangle Payments/EVO-Snap-SampleApplication-CSharp-GUI/source/SampleCode_DeskTop/WSDL's/schemas.evosnap.com_CWS_v2.0_Transactions_ElectronicChecking.xsd" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
