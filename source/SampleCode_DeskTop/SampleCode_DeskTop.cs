@@ -1671,20 +1671,63 @@ namespace SampleCode
              * service available that supports both Credit and PIN Debit, a Merchant Profile is needed for both Credit and PIN Debit.
              * The GetMerchantProfiles() operation retrieves all Merchant Profiles for a specific service and tender type.
             */
-            List<string> MerchantProfileIds = Helper.Cwssic.GetMerchantProfileIds(Helper.SessionToken, Helper.ServiceID, TenderType.Credit);
-            
-            if (MerchantProfileIds != null)
+            if (ConfigurationSettings.AppSettings["ActivationKey"] != "" && this._bcs.ServiceId == "39C6700001")
             {
-                foreach (string MPID in MerchantProfileIds)
+                MerchantProfileIds.Clear();
+                MerchantProfileIds.Add(ConfigurationSettings.AppSettings["ActivationKey"]);
+                if (MerchantProfileIds != null)
                 {
-                    if (MPID == "")
+                    foreach (string MPID in MerchantProfileIds)
                     {
-                        //Although empty MerchantProfileIds should not exist perform the check just in case. 
-                        cboAvailableProfiles.Items.Add(new Item("<default>", "", ""));
+                        if (MPID == "")
+                        {
+                            //Although empty MerchantProfileIds should not exist perform the check just in case. 
+                            cboAvailableProfiles.Items.Add(new Item("<default>", "", ""));
+                        }
+                        else
+                        {
+                            cboAvailableProfiles.Items.Add(new Item(MPID, MPID, ""));
+                        }
                     }
-                    else
+                }
+            }
+            else if (ConfigurationSettings.AppSettings["ActivationKey"] != "" && this._bcs.ServiceId == "4C85600001")
+            {
+                MerchantProfileIds.Clear();
+                MerchantProfileIds.Add(ConfigurationSettings.AppSettings["ActivationKey"] + "_TC");
+                if (MerchantProfileIds != null)
+                {
+                    foreach (string MPID in MerchantProfileIds)
                     {
-                        cboAvailableProfiles.Items.Add(new Item(MPID, MPID, ""));
+                        if (MPID == "")
+                        {
+                            //Although empty MerchantProfileIds should not exist perform the check just in case. 
+                            cboAvailableProfiles.Items.Add(new Item("<default>", "", ""));
+                        }
+                        else
+                        {
+                            cboAvailableProfiles.Items.Add(new Item(MPID, MPID, ""));
+                        }
+                    }
+                }
+            }
+            else
+            {
+                List<string> MerchantProfileIds = Helper.Cwssic.GetMerchantProfileIds(Helper.SessionToken, Helper.ServiceID, TenderType.Credit);
+
+                if (MerchantProfileIds != null)
+                {
+                    foreach (string MPID in MerchantProfileIds)
+                    {
+                        if (MPID == "")
+                        {
+                            //Although empty MerchantProfileIds should not exist perform the check just in case. 
+                            cboAvailableProfiles.Items.Add(new Item("<default>", "", ""));
+                        }
+                        else
+                        {
+                            cboAvailableProfiles.Items.Add(new Item(MPID, MPID, ""));
+                        }
                     }
                 }
             }
